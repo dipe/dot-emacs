@@ -16,12 +16,7 @@
       smtpmail-local-domain "sinnerschrader.com"
       starttls-use-gnutls t)
 
-;; Chrome edit
-(when (require 'edit-server nil t)
-  (setq edit-server-new-frame nil)
-  (edit-server-start))
-
-;; Misc
+;; Misc             
 (server-start)
 
 ;; Flyspell
