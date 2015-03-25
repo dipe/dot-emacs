@@ -6,10 +6,10 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(color-theme markdown-mode yaml-mode haml-mode scss-mode less-css-mode textmate rvm
-                                  flymake flymake-ruby flymake-shell
-                                  idle-highlight-mode ido-ubiquitous find-file-in-project magit smex
-                                  starter-kit starter-kit-ruby starter-kit-js starter-kit-eshell starter-kit-bindings))
+(defvar my-packages '(flymake-ruby idle-highlight-mode magit scss-mode starter-kit-eshell yaml-mode
+                                   color-theme flymake-shell ido-ubiquitous markdown-mode smex starter-kit-js
+                                   find-file-in-project gnupg inf-ruby paredit starter-kit starter-kit-ruby
+                                   flymake-easy haml-mode less-css-mode rvm starter-kit-bindings textmate))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))

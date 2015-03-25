@@ -3,3 +3,6 @@ auto-save-list/
 backups/
 places
 .smex-items
+%backup*
+tramp
+url/
